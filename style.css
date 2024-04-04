@@ -1,0 +1,68 @@
+body {
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --main-color: #fe7300;
+}
+
+body {
+    color: var(--main-color);
+    background-color: #121212;
+    cursor: default;
+}
+
+#window {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+#discord-invite {
+    margin-top: 5vh;
+}
+
+#our-discord {
+    margin-top: 13vh;
+}
+
+#create-loading {
+    margin: auto;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid var(--main-color);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+hr {
+    border-color: var(--main-color);
+}
+
+/* 
+button {
+    background-color: #fe7300;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right:  40px;
+    border-radius: 15px;
+    font-size: large;
+    cursor: pointer;
+} 
+*/

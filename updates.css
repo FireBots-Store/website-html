@@ -1,0 +1,19 @@
+#updates {
+    display: flex;
+}
+
+#update-version {
+    margin: auto 0;
+}
+
+#update-hr {
+    margin-left: 2vh;
+}
+
+#update-list {
+    text-align: end;
+}
+
+#update-list li {
+    list-style-type: none;
+}

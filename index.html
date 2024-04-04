@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireBots | Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="discordInvite.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="shortcut icon" href="./firebots-store-sem-fundo.png" type="image/x-icon">
+    <meta name="description" content="FireBots Store a loja de bots para discord confiável com o melhor preço!">
+    <meta name="theme-color" content="#fe7300" />
+    <link rel="manifest" href="./manifest.json" />
+</head>
+
+<body>
+    <div>
+        <nav id="navbar">
+            <a href="updates.html"><button>Atualizações</button></a>
+            <a href="shop.html"><button>Loja</button></a>
+        </nav>
+    </div>
+    <div id="window">
+        <div id="in-construction">
+            <h1>Loja em construção</h1>
+            <div id="create-loading"></div>
+            <div id="discord-invite">
+                <h2>Entre em nosso discord:</h2>
+                <div id="discordInviteBox"></div>
+                <script src="discordInvite.js"></script>
+                <script>
+                    discordInvite.init({
+                        inviteCode: '8sdRPbNzvZ',
+                        title: 'FireBots Store',
+                    });
+                    discordInvite.render();
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <noscript>
+        <h2 style="text-align: center;">Ative o JavaScript para que a página carregue corretamente!</h2>
+    </noscript>
+</body>
+
+</html>

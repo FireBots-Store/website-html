@@ -1,0 +1,19 @@
+#navbar {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#navbar button {
+    background: none;
+    font-size: 20px;
+    padding: 10px;
+    color: var(--main-color);
+    cursor: pointer;
+    border: none;
+}
+
+#navbar button:hover {
+    transition: .3s;
+    text-decoration: underline;
+}
