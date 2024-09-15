@@ -21,6 +21,28 @@
             <a href="shop.html"><button>Loja</button></a>
         </nav>
     </div> -->
+    <div id="navbar" style="justify-content: space-evenly;">
+        <h1>Por tempo limitado!</h1>
+        <h1 id="contador">10:00</h1>
+        <script>
+            let minutos = 9;
+            let segundos = 60;
+
+            setInterval(() => {
+                if (minutos < 1 && segundos < 1) {
+                    window.alert('Tempo esgotado!');
+                    document.location.reload();
+                };
+                segundos = segundos - 1;
+                if (segundos < 1) {
+                    segundos = 60;
+                    minutos = minutos - 1;
+                };
+                document.getElementById('contador').innerText = `${String(minutos).padStart(2, 0)}:${String(segundos).padStart(2, 0)}`
+            }, 1000);
+
+        </script>
+    </div>
     <div id="window">
         <!--         <div id="in-construction">
             <h1>Loja em construção</h1>
@@ -38,18 +60,32 @@
                 </script>
             </div>
         </div> -->
-        <img style="display: flex; align-items: center; justify-items: center; justify-self: center;" src="firebots-store-sem-fundo.png" />
+        <img src="firebots-store-sem-fundo.png" />
     </div>
-    <div >
+    <div>
         <div style="text-align: center;">
-            <h1>Se torne um associado da MasterFire hoje mesmo!</h1>
+            <h1>Se torne um associado da MasterFire ainda hoje.</h1>
         </div>
         <div style="text-align: center;">
             <h3>
-                Nos tornamos uma empresa de capital aberto... <br />
-                Você pode contribuir com qualquer valor e ganhar uma participação na empresa <br />
-                Te esperamos na mesa dos adultos!
+                Agora somos uma empresa de capital aberto! <br />
+                Você pode contribuir com qualquer valor e ganhar uma participação na empresa. <br />
             </h3>
+        </div>
+        <div style="text-align: center; align-self: center; align-items: center;">
+            <a href="https://pay.hotmart.com/S89254966T?bid=1714964972077">
+                <button style="
+                font-size: 20px;
+                background-color: var(--main-color);
+                border: none;
+                padding: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border-radius: 25px;
+                cursor: pointer;
+                color: white;
+                ">QUERO ME TORNAR UM ASSOCIADO!</button>
+            </a>
         </div>
     </div>
 
